@@ -1,0 +1,384 @@
+/* Navbar styles */
+.App-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  margin-right: 10%;
+}
+.dropdown-menu {
+  display: none;
+}
+
+.left-side {
+  text-align: left;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side ul {
+  list-style: none;
+  margin-right: 50px;
+  display: flex;
+  border: 2px solid;
+  border-radius: 40px;
+  height: 35px;
+}
+
+.right-side li {
+  margin: 0 30px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.right-side li a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* Navbar styles */
+
+
+
+/*main app styles */
+.Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px; /* Add margin for spacing */
+}
+
+/* Left content styles go here */
+
+.Container_left {
+  
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin-left: 60px;
+  font-size: x-large;
+
+}
+
+.Container_right {
+  width: 500px;
+  margin-right: 300px;
+  
+}
+
+.Container_right img {
+  width: 700px;
+  border-radius: 30px;
+  box-shadow:  10px 10px 10px rgba(0,0,0,0.12)
+    
+}
+
+.About{
+  display: flex;
+  flex-direction: auto;
+  justify-content: center;
+  margin-right: 20px; 
+}
+.About a{
+  margin-left: 50px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid;
+}
+.btn  {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+/*main app styles */
+
+
+
+/* Navbar styles */
+/* ... Existing styles ... */
+
+@media (max-width: 1000px) {
+  .ul {
+     
+     flex-direction: column;
+     align-items: center;
+     position: absolute;
+     top: 90px; /* Adjust as needed */
+     left: 13%;
+     background-color: white;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+  }
+  .left-side h1 {
+    padding-left: 100px;
+  }
+
+  .dropdown-menu {
+    display: flex;/* Hide the original navigation on small screens */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 13%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+
+ 
+
+  /* Show the dropdown menu when the navigation button is clicked */
+  .right-side button {
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    margin: bottom 10px;  ; 
+    margin-left: auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+
+  /* Main app styles for screens up to 1000px */
+  .Container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin: 60px auto; /* Center the content */
+    width: 80%; /* Adjust as needed */
+  }
+
+  .Container_left,
+  .Container_right {
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove margins for full width */
+  }
+
+  .Container_right img {
+    width: 100%; /* Make the image responsive within its container */
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .About {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+
+  .About a {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+}
+
+@media (max-width: 795px) {
+  .ul {
+    display: none; /* Hide the original navigation on small screens */
+  }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 13%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .App-navbar {
+    width: 20%;
+    padding-left: 40%;
+    padding-right: 0;
+
+  }
+
+
+
+  .dropdown-menu  {
+    transform: translateY(-53%);
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+
+  .dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-menu li {
+    text-align: center;
+    margin: 10px;
+  }
+ 
+
+  /* Show the dropdown menu when the navigation button is clicked */
+  .right-side button {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-left: auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  /* Main app styles for screens up to 1000px */
+  .Container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin: 20px auto; /* Center the content */
+    width: 80%; /* Adjust as needed */
+  }
+
+  .Container_left,
+  .Container_right {
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove margins for full width */
+  }
+
+  .Container_right img {
+    width: 100%; /* Make the image responsive within its container */
+    border-radius: 10px; /* Adjust as needed */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .About {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+
+  .About a {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+}
+
+
+
+
+.faq-container {
+  margin: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 900px;
+  width: 100%;
+}
+
+.question {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-shadow: 5px 10px 18px #888888;
+
+}
+
+.question:hover {
+  background-color:beige;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.answer p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.visible {
+  display: block;
+}
+.arrow {
+  font-size: 1.2em;
+}
+
+
+@media (max-width: 1000px) {
+  .faq-container {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 795px) {
+  .faq-container {
+    margin: 5%;
+  }
+}
+
+.question {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.question:hover {
+  background-color: beige;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.answer p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.visible {
+  display: block;
+}
+
+.arrow {
+  font-size: 1.2em;
+}
