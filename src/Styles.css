@@ -1,0 +1,198 @@
+.split {
+    background-color: #1e1f20;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .split h1 {
+    background-color: #1e1f20;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  
+  .Specials-container {
+    margin: 20px;
+  }
+  
+  .Specials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .Kids {
+    background-image: url("enfant2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 640px;
+    height: 420px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Teens {
+    background-image: url("Adojpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 640px;
+    height: 420px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Adults {
+    background-image: url("Adulte.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 640px;
+    height: 420px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Title {
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .Kids:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 50px black;
+    border-radius: 10px;
+  }
+  
+  .Teens:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 50px black;
+    border-radius: 10px;
+  }
+  
+  .Adults:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 50px black;
+    border-radius: 10px;
+  }
+  
+  .Description {
+    display: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 30px;
+  }
+  
+  .Description p {
+    padding: 20px;
+    color: aliceblue;
+    font-weight: bold;
+  }
+  
+  .Teens:hover .Description,
+  .Adults:hover .Description,
+  .Kids:hover .Description {
+    display: block;
+  }
+
+  /* Existing CSS code */
+
+@media (max-width: 1000px) {
+    .Specials-container {
+      margin: 10px;
+    }
+  
+    .Specials {
+      flex-direction: column;
+    }
+  
+    .Kids,
+    .Teens,
+    .Adults {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .Description {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 795px) {
+    .Specials {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Kids,
+    .Teens,
+    .Adults {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .Description {
+      margin: 10px;
+    }
+  }
+  
+  footer {
+	background-image: url('bgc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	backdrop-filter: blur(40px);
+
+  }
+  
+  .footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+.Info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+.Info:last-child{
+	padding-top: 10px;
+}
+.Info:first-child{
+	padding-bottom: 5px;
+}
+
+.Info li {
+	margin: 0px;
+	
+}
+.Info li a {
+	text-decoration:none ;
+}
+
+.Info li:last-child {
+	margin-right: 0;
+}
+
+.Info p {
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.Info-Container{
+	display: flex;
+	flex-direction: column;
+    background-color: rgba(0,0,0, 0.7);
+	margin: 30px;
+    border-radius: 15px;
+}
