@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import './Styles.css';
 
 const DropdownMenu = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -72,7 +73,7 @@ function App() {
             </ul>
           </div>
           <DropdownMenu />
-          <li><button>Login</button></li>
+          <a href='loginsignup.jsx'><li><button>Login</button></li></a>
         </div>
       </nav>
       <main className="App-main">
@@ -93,65 +94,71 @@ function App() {
           </div>
         </div>
         <div className='About'>
-          <button className='btn'>Try Our Quizz</button>
+          <button className='btn'>Try Our Quiz</button>
           <a href="#">LEARN ABOUT THE SYMPTOMS</a>
         </div>
 
-        <div className="faq-container">
-          <div className="question" onClick={() => toggleAnswer('answer1')}>What is video games addiction
-            <span className="arrow" id="arrow1">
-              <img className="right-arrow" src="Right.png" alt="" />
-              <img className="down-arrow" src="Down.png" alt="" style={{ display: 'none' }} />
-            </span>
-          </div>
-          <div className="answer" id="answer1">
-            <p>Diagnostic criteria are slowly being formed by health bodies across the world. However, experts generally look to evaluate sustained patterns of gaming in patients and the degree to which they interfere with other life obligations.</p>
-          </div>
-
-          <div className="question" onClick={() => toggleAnswer('answer2')}>Are long gaming sessions an indicator of video game addiction
-            <span className="arrow" id="arrow2">
-              <img className="right-arrow" src="Right.png" alt="" />
-              <img className="down-arrow" src="Down.png" alt="" style={{ display: 'none' }} />
-            </span>
-          </div>
-          <div className="answer" id="answer2">
-            <p>Not necessarily. Video games are designed to challenge and stimulate players and tens of millions of Americans regularly enjoy the escape that they offer. Addiction involves sustained patterns of play that interfere with daily life and, therefore, occasional long gaming sessions don't act as definitive proof of a behavioral issue.</p>
-          </div>
-
-          <div className="question" onClick={() => toggleAnswer('answer3')}>What makes video games addictive
-            <span className="arrow" id="arrow3">
-              <img className="right-arrow" src="Right.png" alt="" />
-              <img className="down-arrow" src="Down.png" alt="" style={{ display: 'none' }} />
-            </span>
-          </div>
-          <div className="answer" id="answer3">
-            <p>Challenge, discovery, and social elements of online gaming all contribute to the enjoyment of video games. With the advent of streaming platforms like Twitch, gaming is more collaborative and social than ever before. Problems arise when excessive gaming begins to supplant real-life relationships and obligations.</p>
-          </div>
-
-          <div className="question" onClick={() => toggleAnswer('answer4')}>How prevalent is gaming addiction
-            <span className="arrow" id="arrow4">
-              <img className="right-arrow" src="Right.png" alt="" />
-              <img className="down-arrow" src="Down.png" alt="" style={{ display: 'none' }} />
-            </span>
-          </div>
-          <div className="answer" id="answer4">
-            <p>Studies estimate that 10 to 15% of gamers exhibit signs that meet the World Health Organization's criteria for addiction. You can find out more by exploring the resources available on our site.</p>
-          </div>
-
-          <div className="question" onClick={() => toggleAnswer('answer5')}>What can I do to address the problem
-            <span className="arrow" id="arrow5">
-              <img className="right-arrow" src="Right.png" alt="" />
-              <img className="down-arrow" src="Down.png" alt="" style={{ display: 'none' }} />
-            </span>
-          </div>
-          <div className="answer" id="answer5">
-            <p>If you or a loved one shows signs of computer or video game addiction, this website is for you. Here, you will find up-to-date information and resources that will help you assess whether gaming has gone from an entertaining pastime to a full-blown obsession. From signs and symptoms to advice for parents and treatment options, we try to offer evidence-based advice and solutions to help bring compulsive gamers back to real life.</p>
+        {/* New section */}
+        <div className="split">
+          <h1>Gaming Addiction In</h1>
+        </div>
+        <div className="Specials-container">
+          <div className="Specials">
+            <div className="Kids">
+              <h1 className="Title">Kids</h1>
+              <div className="Description">
+                <p>
+                  • Impaired Skill Development: Gaming hampers essential skills, affecting social and cognitive abilities.
+                  <br /> • Disrupted Routines: Prolonged screen time challenges academic performance.
+                  <br /> • Social Withdrawal: Excessive gaming hinders real-world connections.
+                </p>
+              </div>
+            </div>
+            <div className="Teens">
+              <h1 className="Title">Teens</h1>
+              <div className="Description">
+                <p>
+                  • Academic Decline: Teens face performance decline, sleep disruption, and emotional impact.
+                  <br /> • Social Isolation: Excessive gaming leads to withdrawal from face-to-face interactions.
+                  <br /> • Emotional Impact: Gaming serves as an escape, affecting emotional health.
+                </p>
+              </div>
+            </div>
+            <div className="Adults">
+              <h1 className="Title">Adults</h1>
+              <div className="Description">
+                <p>
+                  • Professional Challenges: Gaming addiction results in decreased productivity and strained relationships.
+                  <br /> • Strained Relationships: Marital and familial bonds suffer due to gaming prioritization.
+                  <br /> • Health Consequences: Physical health deteriorates; intervention is crucial for breaking the cycle.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-   
       </main>
+
+      {/* Footer */}
+      <footer>
+        <div className="footer-container">
+          <div className="Info-Container">
+            <ul className="Info">
+            
+              <li> <a href=""><p style={{ paddingLeft: '40px' }}>GET HELP</p></a> </li> 
+              <li> <a href=""><p style={{ paddingLeft: '40px' }}>TAKE QUIZ</p></a> </li> 
+              <li> <a href=""><p style={{ paddingRight: '20px' }}>MORE INFO</p></a> </li> 
+            </ul>
+            <div className="Contact-Info">
+        <p>Email: Bachtarzimounder@gmail.com</p>
+        <p>Phone: +213 0559550699</p>
+        <p>Constantine - Algérie La Nouvelle Ville Ali Mendjeli, 25016</p>
+      </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
