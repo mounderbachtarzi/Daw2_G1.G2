@@ -1,0 +1,61 @@
+header{
+    background-color: yellow;
+    border-radius: 8px ;
+    height: 65px;
+}
+header p {
+    text-align: center;
+}
+header h2{
+    text-align: center;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+}
+#links{
+    margin-top: 10px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    height: 60px;
+    width: 300px;
+    background-color: orange;
+    border-radius: 5px;
+}
+#blabla{
+    margin-top: 10px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    height: 170px;
+    width: 600px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+#tuto{
+    margin-top: 10px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    height: 70px;
+    width: 450px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+#tools{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    height: 110px;
+    width: 500px;
+    background-color: blue;
+    border-radius: 5px;
+}
+#grand{
+    display: flex;
+    flex-direction: row;
+}
